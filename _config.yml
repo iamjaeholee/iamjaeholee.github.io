@@ -1,0 +1,18 @@
+# 사이트 기본 설정
+title: 복세편살 기술 블로그
+description: >-
+  복잡한 세상 편하게 살고 싶은 개발자의 기술 기록. 
+  Java, Python, Rust, 그리고 IT 프리랜서의 인사이트를 공유합니다.
+author: 복세편살 (Boksepyeonsal)
+email: boksepyunsal24@gamil.com
+
+# 테마 설정
+theme: jekyll-theme-minimal
+
+# SNS 설정 
+github_username: iamjaeholee 
+
+# 플러그인 (SEO 및 사이트맵 자동 생성)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
