@@ -1,5 +1,11 @@
----layout: posttitle: "[Network/Security] The Ultimate Guide to IPsec for Developers: Protocols, Modes, and Packet Structure"date: 2026-01-29 06:08:13 +0000
-categories: [Velog]---<p>If you are studying AWS networking or preparing for a backend engineering interview, you will inevitably encounter the term <strong>IPsec (Internet Protocol Security)</strong>. It is also a favorite topic for technical interviewers.</p>
+---
+layout: post
+title: "[Network/Security] The Ultimate Guide to IPsec for Developers: Protocols, Modes, and Packet Structure"
+date: 2026-01-29 06:08:13 +0000
+categories: [Velog]
+---
+
+<p>If you are studying AWS networking or preparing for a backend engineering interview, you will inevitably encounter the term <strong>IPsec (Internet Protocol Security)</strong>. It is also a favorite topic for technical interviewers.</p>
 <p>*&quot;What is the relationship between VPN and IPsec?&quot;*
 *&quot;What is the difference between Tunnel Mode and Transport Mode?&quot;*</p>
 <p>Today, let&#39;s skip the abstract textbook definitions. Instead, we will break down the working principles of IPsec using <strong>intuitive analogies (Packaging &amp; Delivery)</strong> and analyze the <strong>actual packet structure</strong> from a developer&#39;s perspective.</p>
@@ -55,13 +61,13 @@ categories: [Velog]---<p>If you are studying AWS networking or preparing for a b
 <h2 id="4-deep-dive-packet-anatomy">4. [Deep Dive] Packet Anatomy</h2>
 <p>As developers, we trust code and data structures. Here is how the actual packet bytes transform.
 This example uses the standard <strong>[ESP + Tunnel Mode]</strong> combination.</p>
-<h4 id="step-1-original-packet-plain-text">Step 1: Original Packet (Plain Text)</h4>
+<p>Step 1: Original Packet (Plain Text)</p>
 <pre><code class="language-text">[ Original IP Header ] + [ TCP Header ] + [ Data: &quot;Hello&quot; ]
 </code></pre>
 <ul>
 <li>If a hacker sniffs this, they can read &quot;Hello&quot; and see your internal IP.</li>
 </ul>
-<h4 id="step-2-after-ipsec-encapsulation-encrypted">Step 2: After IPsec Encapsulation (Encrypted)</h4>
+<p>Step 2: After IPsec Encapsulation (Encrypted)</p>
 <p>The OS Kernel wraps the entire Layer 3 packet inside the &quot;Outer Box.&quot;</p>
 <pre><code class="language-text">[ New IP Header ]           &lt;-- 1. 겉박스 송장 (출발: VPN게이트웨이 / 도착: 상대방게이트웨이)
 [ ESP Header ]              &lt;-- 2. 금고 식별번호 (SPI, Sequence Number)
@@ -75,19 +81,19 @@ This example uses the standard <strong>[ESP + Tunnel Mode]</strong> combination.
 <p><strong>Key Takeaways:</strong></p>
 <ol>
 <li><strong>New IP Header:</strong> Internet routers only look at this outer header to route the packet.</li>
-<li><strong>Encrypted Payload:</strong> Since the <code>Original IP</code> is encrypted, the final destination is hidden from the public internet.</li>
+<li><strong>Encrypted Payload:</strong> Since the <code class="language-text">Original IP</code> is encrypted, the final destination is hidden from the public internet.</li>
 </ol>
 <hr>
 <h2 id="5-faq-myths-and-truths">5. FAQ: Myths and Truths</h2>
 <h3 id="q1-i-already-use-https-do-i-need-ipsec-vpn">Q1. I already use HTTPS. Do I need IPsec VPN?</h3>
 <p><strong>A. Yes, using both is better (Defense in Depth).</strong>
 HTTPS protects the <strong>Content (Layer 7)</strong>. IPsec protects the <strong>Path (Layer 3)</strong>.
-When combined, you get a structure like <code>[ IPsec [ HTTPS [ Data ] ] ]</code>. Even if the VPN administrator inspects the packet, they cannot see your HTTPS data. This enables a <strong>Zero Trust</strong> architecture.</p>
+When combined, you get a structure like <code class="language-text">[ IPsec [ HTTPS [ Data ] ] ]</code>. Even if the VPN administrator inspects the packet, they cannot see your HTTPS data. This enables a <strong>Zero Trust</strong> architecture.</p>
 <h3 id="q2-is-ipsec-software-or-hardware">Q2. Is IPsec Software or Hardware?</h3>
 <p><strong>A. IPsec itself is a Protocol (Software).</strong>
-However, enterprise &quot;VPN Appliances&quot; (like Cisco or Fortinet gear) are essentially Linux computers equipped with <strong>ASIC (Application-Specific Integrated Circuit) chips</strong>. These chips offload the heavy math of encryption (AES-256) from the CPU, allowing for high-speed throughput.</p>
+However, enterprise &quot;VPN Appliances&quot; (like Cisco or Fortinet gear) are essentially Linux computers equipped with <strong>ASIC (Application-Specific Integrated Circuit) chips)</strong>. These chips offload the heavy math of encryption (AES-256) from the CPU, allowing for high-speed throughput.</p>
 <hr>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>IPsec is not just a security tool; it is akin to <strong>civil engineering for the internet</strong>. It builds a private, secure highway on top of the public, chaotic road network.</p>
-<p>The next time you configure an <code>AWS Site-to-Site VPN</code> or analyze packet logs, visualize this image: <strong>&quot;My data is locked in an Iron Safe (ESP), placed inside a Plain Cardboard Box (Tunnel Mode), and shipped across the internet.&quot;</strong></p>
+<p>The next time you configure an <code class="language-text">AWS Site-to-Site VPN</code> or analyze packet logs, visualize this image: <strong>&quot;My data is locked in an Iron Safe (ESP), placed inside a Plain Cardboard Box (Tunnel Mode), and shipped across the internet.&quot;</strong></p>
 <p>It makes the concept much easier to grasp.</p>

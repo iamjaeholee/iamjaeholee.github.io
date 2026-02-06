@@ -1,5 +1,11 @@
----layout: posttitle: "[CKA] Mastering K8s NetworkPolicy: Pod Isolation & The DNS Trap"date: 2026-02-04 23:58:02 +0000
-categories: [Velog]---<h3 id="1-introduction-kubernetes-is-open-by-default">1. Introduction: Kubernetes is &quot;Open&quot; by Default</h3>
+---
+layout: post
+title: "[CKA] Mastering K8s NetworkPolicy: Pod Isolation & The DNS Trap"
+date: 2026-02-04 23:58:02 +0000
+categories: [Velog]
+---
+
+<h3 id="1-introduction-kubernetes-is-open-by-default">1. Introduction: Kubernetes is &quot;Open&quot; by Default</h3>
 <p>One of the first things you realize when learning Kubernetes is that <strong>all Pods can communicate with all other Pods</strong> by default. It’s a flat network structure.</p>
 <p>While this is convenient for development, it’s a security nightmare in production. Imagine your frontend web server having unrestricted access to your database, or a compromised pod having access to your entire internal network.</p>
 <p>To solve this, we use <strong>NetworkPolicy</strong>. In this post, I’ll walk through how to isolate namespaces and avoid the most common &quot;gotcha&quot; in the CKA exam: <strong>Forgetting DNS.</strong></p>
