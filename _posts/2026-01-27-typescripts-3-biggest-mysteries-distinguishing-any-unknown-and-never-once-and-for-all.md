@@ -1,10 +1,5 @@
----layout: post
-title: "TypeScript's 3 Biggest Mysteries: Distinguishing `any`, `unknown`, and `never` Once and for All"
-date: 2026-01-27 09:53:08 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/TypeScripts-3-Biggest-Mysteries-Distinguishing-any-unknown-and-never-Once-and-for-All-lagw6lur
----
-<p>When studying TypeScript, there are three keywords that you encounter most often but find hardest to explain clearly: <code>any</code>, <code>unknown</code>, and <code>never</code>.</p>
+---layout: posttitle: "TypeScript's 3 Biggest Mysteries: Distinguishing `any`, `unknown`, and `never` Once and for All"date: 2026-01-27 09:53:08 +0000
+categories: [Velog]---<p>When studying TypeScript, there are three keywords that you encounter most often but find hardest to explain clearly: <code>any</code>, <code>unknown</code>, and <code>never</code>.</p>
 <p>&quot;Can&#39;t I just use <code>any</code> for everything? It&#39;s so convenient.&quot;
 &quot;If a function returns nothing, isn&#39;t that <code>void</code>? What on earth is <code>never</code>?&quot;</p>
 <p>Today, I will clarify the subtle differences between these three types using [real-life analogies] that make them easy to understand.</p>
@@ -61,8 +56,8 @@ function sayHello(): void {
 // Case 2: never (Abnormal Termination / Black Hole)
 function crashGame(): never {
   throw new Error(&quot;Server Exploded!&quot;); 
-  // The program crashes here, or the flow is hijacked.
-  // The code below this line can NEVER be reached. (Unreachable Code)
+  // 여기서 프로그램이 터지거나 흐름이 납치당합니다.
+  // 이 밑으로는 절대 내려가지 못합니다. (Unreachable Code)
 }
 </code></pre>
 <h3 id="the-real-way-to-use-never-proof-of-perfection">The Real Way to Use &#39;never&#39;: [Proof of Perfection]</h3>

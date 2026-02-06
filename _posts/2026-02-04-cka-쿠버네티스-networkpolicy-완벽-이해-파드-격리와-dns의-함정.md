@@ -1,10 +1,5 @@
----layout: post
-title: "[CKA] 쿠버네티스 NetworkPolicy 완벽 이해: 파드 격리와 DNS의 함정"
-date: 2026-02-04 23:57:04 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/CKA-%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-NetworkPolicy-%EC%99%84%EB%B2%BD-%EC%9D%B4%ED%95%B4-%ED%8C%8C%EB%93%9C-%EA%B2%A9%EB%A6%AC%EC%99%80-DNS%EC%9D%98-%ED%95%A8%EC%A0%95
----
-<h3 id="1-들어가며-쿠버네티스의-문은-원래-활짝-열려있다">1. 들어가며: 쿠버네티스의 문은 원래 활짝 열려있다</h3>
+---layout: posttitle: "[CKA] 쿠버네티스 NetworkPolicy 완벽 이해: 파드 격리와 DNS의 함정"date: 2026-02-04 23:57:04 +0000
+categories: [Velog]---<h3 id="1-들어가며-쿠버네티스의-문은-원래-활짝-열려있다">1. 들어가며: 쿠버네티스의 문은 원래 활짝 열려있다</h3>
 <p>쿠버네티스를 처음 접할 때 가장 오해하기 쉬운 것 중 하나가 보안입니다. 기본적으로 쿠버네티스 클러스터 내의 모든 파드(Pod)는 <strong>서로 자유롭게 통신이 가능(Non-isolated)</strong>합니다.
 마치 옆집, 윗집 문이 다 열려 있어서 누구든 마음대로 드나들 수 있는 아파트와 같죠. 개발할 땐 편하지만, 보안상으로는 굉장히 위험한 구조입니다.</p>
 <p>이때 필요한 것이 바로 <strong>NetworkPolicy(네트워크 정책)</strong>입니다. 이번 포스팅에서는 NetworkPolicy의 개념과 실무에서 가장 많이 실수하는 <strong>DNS 설정</strong>에 대해 정리해 봅니다.</p>

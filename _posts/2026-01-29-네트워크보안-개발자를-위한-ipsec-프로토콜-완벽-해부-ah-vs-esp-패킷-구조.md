@@ -1,10 +1,5 @@
----layout: post
-title: "[네트워크/보안] 개발자를 위한 IPsec 프로토콜 완벽 해부 (AH vs ESP, 패킷 구조)"
-date: 2026-01-29 06:05:38 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-IPsec-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%99%84%EB%B2%BD-%ED%95%B4%EB%B6%80-AH-vs-ESP-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%A1%B0
----
-<p>AWS나 네트워크 보안을 공부하다 보면 <strong>IPsec (Internet Protocol Security)</strong>이라는 단어를 무조건 마주치게 됩니다. 기술 면접 단골 질문이기도 하죠.</p>
+---layout: posttitle: "[네트워크/보안] 개발자를 위한 IPsec 프로토콜 완벽 해부 (AH vs ESP, 패킷 구조)"date: 2026-01-29 06:05:38 +0000
+categories: [Velog]---<p>AWS나 네트워크 보안을 공부하다 보면 <strong>IPsec (Internet Protocol Security)</strong>이라는 단어를 무조건 마주치게 됩니다. 기술 면접 단골 질문이기도 하죠.</p>
 <p>&quot;VPN이랑 IPsec은 무슨 관계인가요?&quot;
 &quot;터널 모드는 뭐고 전송 모드는 뭔가요?&quot;</p>
 <p>오늘은 뜬구름 잡는 비유는 빼고, <strong>가장 직관적인 &#39;택배 포장&#39; 예시</strong>와 <strong>개발자를 위한 패킷 구조</strong>를 통해 IPsec의 작동 원리를 완벽하게 파헤쳐 보겠습니다.</p>
@@ -76,8 +71,8 @@ original_url: https://velog.io/@iamjaeholee/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC
 </code></pre>
 <p><strong>핵심 포인트:</strong></p>
 <ol>
-<li><strong>New IP Header</strong>: 인터넷 라우터들은 이 겉박스 주소만 보고 패킷을 배달합니다.</li>
-<li><strong>Encrypted Payload</strong>: 원래의 <code>Original IP</code>까지 암호화되었기 때문에, 최종 목적지가 어디인지 외부에서는 절대 알 수 없습니다.</li>
+<li><strong>New IP Header:</strong> 인터넷 라우터들은 이 겉박스 주소만 보고 패킷을 배달합니다.</li>
+<li><strong>Encrypted Payload:</strong> 원래의 <code>Original IP</code>까지 암호화되었기 때문에, 최종 목적지가 어디인지 외부에서는 절대 알 수 없습니다.</li>
 </ol>
 <hr>
 <h2 id="5-faq-ipsec에-대한-오해와-진실">5. FAQ: IPsec에 대한 오해와 진실</h2>

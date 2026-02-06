@@ -1,10 +1,5 @@
----layout: post
-title: "[Next.js] 라이프 사이클의 비밀: 서버에서 브라우저까지 (feat. Hydration)"
-date: 2026-01-17 10:10:09 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/Next.js-%EB%9D%BC%EC%9D%B4%ED%94%84-%EC%82%AC%EC%9D%B4%ED%81%B4%EC%9D%98-%EB%B9%84%EB%B0%80-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EA%B9%8C%EC%A7%80-feat.-Hydration
----
-<p>리액트를 공부하다 보면 <strong>마운트(Mount)</strong> , <strong>업데이트(Update)</strong> , <strong>언마운트(Unmount)</strong> 라는 용어를 지겹도록 듣게 됩니다. 컴포넌트가 태어나고, 변하고, 죽는 과정이죠.</p>
+---layout: posttitle: "[Next.js] 라이프 사이클의 비밀: 서버에서 브라우저까지 (feat. Hydration)"date: 2026-01-17 10:10:09 +0000
+categories: [Velog]---<p>리액트를 공부하다 보면 <strong>마운트(Mount)</strong> , <strong>업데이트(Update)</strong> , <strong>언마운트(Unmount)</strong> 라는 용어를 지겹도록 듣게 됩니다. 컴포넌트가 태어나고, 변하고, 죽는 과정이죠.</p>
 <p>하지만 <strong>Next.js</strong> 는 여기에 <strong>&quot;서버&quot;</strong> 라는 단계가 하나 더 추가됩니다. 그래서 일반 리액트 앱보다 생명 주기가 조금 더 복잡하고 흥미롭습니다.</p>
 <p>오늘은 Next.js App Router 환경에서 <strong>페이지가 어떻게 생성되고, 브라우저에서 어떻게 살아 움직이게 되는지</strong> 그 전체적인 일생을 정리해 보려 합니다.</p>
 <hr>

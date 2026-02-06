@@ -1,10 +1,5 @@
----layout: post
-title: "[Styled-components] TypeScript + Storybook으로 완벽한 디자인 시스템 구축하기"
-date: 2026-01-17 10:04:54 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/Styled-components-TypeScript-Storybook%EC%9C%BC%EB%A1%9C-%EC%99%84%EB%B2%BD%ED%95%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0
----
-<p>모던 프론트엔드 개발에서 <strong>CSS-in-JS</strong> 는 이제 선택이 아닌 필수가 되어가고 있죠. 그중에서도 가장 대중적인 <strong>Styled-components</strong> 를 많이 사용하실 텐데요.</p>
+---layout: posttitle: "[Styled-components] TypeScript + Storybook으로 완벽한 디자인 시스템 구축하기"date: 2026-01-17 10:04:54 +0000
+categories: [Velog]---<p>모던 프론트엔드 개발에서 <strong>CSS-in-JS</strong> 는 이제 선택이 아닌 필수가 되어가고 있죠. 그중에서도 가장 대중적인 <strong>Styled-components</strong> 를 많이 사용하실 텐데요.</p>
 <p>하지만 JavaScript에서는 편하게 썼던 기능들이 <strong>TypeScript</strong> 로 넘어오면서 빨간 줄(에러)을 뿜어내기 시작합니다. 게다가 <strong>Storybook</strong> 까지 붙이려면 설정해야 할 게 한두 가지가 아니죠.</p>
 <p>오늘은 실무에서 자주 마주치는 <strong>TypeScript 타이핑 팁</strong> 과 <strong>Storybook 연동 시 필수 설정</strong> 을 정리해 드립니다.</p>
 <hr>

@@ -1,10 +1,5 @@
----layout: post
-title: "[Network/Security] The Ultimate Guide to IPsec for Developers: Protocols, Modes, and Packet Structure"
-date: 2026-01-29 06:08:13 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/NetworkSecurity-The-Ultimate-Guide-to-IPsec-for-Developers-Protocols-Modes-and-Packet-Structure
----
-<p>If you are studying AWS networking or preparing for a backend engineering interview, you will inevitably encounter the term <strong>IPsec (Internet Protocol Security)</strong>. It is also a favorite topic for technical interviewers.</p>
+---layout: posttitle: "[Network/Security] The Ultimate Guide to IPsec for Developers: Protocols, Modes, and Packet Structure"date: 2026-01-29 06:08:13 +0000
+categories: [Velog]---<p>If you are studying AWS networking or preparing for a backend engineering interview, you will inevitably encounter the term <strong>IPsec (Internet Protocol Security)</strong>. It is also a favorite topic for technical interviewers.</p>
 <p>*&quot;What is the relationship between VPN and IPsec?&quot;*
 *&quot;What is the difference between Tunnel Mode and Transport Mode?&quot;*</p>
 <p>Today, let&#39;s skip the abstract textbook definitions. Instead, we will break down the working principles of IPsec using <strong>intuitive analogies (Packaging &amp; Delivery)</strong> and analyze the <strong>actual packet structure</strong> from a developer&#39;s perspective.</p>

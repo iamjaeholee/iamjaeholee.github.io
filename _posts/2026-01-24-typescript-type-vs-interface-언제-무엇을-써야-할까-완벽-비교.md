@@ -1,10 +1,5 @@
----layout: post
-title: "[TypeScript] type vs interface, 언제 무엇을 써야 할까? (완벽 비교)"
-date: 2026-01-24 23:25:54 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/TypeScript-type-vs-interface-%EC%96%B8%EC%A0%9C-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90
----
-<h2 id="1-들어가며-영원한-난제-무엇을-써야-할까">1. 들어가며: 영원한 난제, 무엇을 써야 할까?</h2>
+---layout: posttitle: "[TypeScript] type vs interface, 언제 무엇을 써야 할까? (완벽 비교)"date: 2026-01-24 23:25:54 +0000
+categories: [Velog]---<h2 id="1-들어가며-영원한-난제-무엇을-써야-할까">1. 들어가며: 영원한 난제, 무엇을 써야 할까?</h2>
 <p>타입스크립트를 공부하다 보면 가장 먼저 마주하는 고민이 있습니다. 바로 객체의 타입을 정의할 때 [Type]을 쓸 것이냐, [Interface]를 쓸 것이냐 하는 문제입니다.</p>
 <p>둘은 매우 비슷해 보이고, 실제로 대부분의 상황에서는 어느 것을 써도 기능적으로 동일하게 동작합니다. 하지만 TypeScript 공식 홈페이지(Handbook)에서는 이 둘의 차이를 명확히 구분하고 있으며, 상황에 따른 권장 사항도 제시하고 있습니다.</p>
 <p>오늘은 공식 문서를 기준으로 이 둘의 핵심적인 차이를 정리해 보고, 언제 무엇을 써야 할지 명확한 기준을 잡아드리겠습니다.</p>

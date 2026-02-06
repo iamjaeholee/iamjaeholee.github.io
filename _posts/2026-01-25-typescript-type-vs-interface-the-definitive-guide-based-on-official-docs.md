@@ -1,10 +1,5 @@
----layout: post
-title: "[TypeScript] Type vs. Interface: The Definitive Guide (Based on Official Docs)"
-date: 2026-01-25 18:30:24 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/TypeScript-Type-vs.-Interface-The-Definitive-Guide-Based-on-Official-Docs
----
-<h4 id="1-introduction-the-eternal-dilemma">1. Introduction: The Eternal Dilemma</h4>
+---layout: posttitle: "[TypeScript] Type vs. Interface: The Definitive Guide (Based on Official Docs)"date: 2026-01-25 18:30:24 +0000
+categories: [Velog]---<h4 id="1-introduction-the-eternal-dilemma">1. Introduction: The Eternal Dilemma</h4>
 <p>If you are studying TypeScript, you have likely faced this question early on:
 *&quot;Should I use <code>type</code> or <code>interface</code> to define my object types?&quot;*</p>
 <p>They look very similar, and in 99% of cases, they function identically. However, the <strong>TypeScript Official Handbook</strong> clearly distinguishes between the two and provides recommendations based on specific scenarios.</p>

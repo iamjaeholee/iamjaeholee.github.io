@@ -1,10 +1,5 @@
----layout: post
-title: "[React] Custom Hook으로 비즈니스 로직 분리하기 (실무 활용 패턴 3가지)"
-date: 2026-01-17 10:07:06 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/React-Custom-Hook%EC%9C%BC%EB%A1%9C-%EB%B9%84%EC%A6%88%EB%8B%88%EC%A6%88-%EB%A1%9C%EC%A7%81-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0-%EC%8B%A4%EB%AC%B4-%ED%99%9C%EC%9A%A9-%ED%8C%A8%ED%84%B4-3%EA%B0%80%EC%A7%80
----
-<p>리액트 개발을 하다 보면 컴포넌트 파일이 점점 뚱뚱해지는 것을 느끼실 때가 있을 겁니다.
+---layout: posttitle: "[React] Custom Hook으로 비즈니스 로직 분리하기 (실무 활용 패턴 3가지)"date: 2026-01-17 10:07:06 +0000
+categories: [Velog]---<p>리액트 개발을 하다 보면 컴포넌트 파일이 점점 뚱뚱해지는 것을 느끼실 때가 있을 겁니다.
 <code>useState</code>, <code>useEffect</code>, 핸들러 함수들이 뒤섞여서 코드가 200줄, 300줄 넘어가기 시작하면 유지보수가 정말 힘들어지죠.</p>
 <p>이때 필요한 것이 바로 <strong>Custom Hook</strong> (커스텀 훅) 입니다.
 오늘은 제가 실무에서 자주 사용하는, <strong>코드를 획기적으로 줄여주는 커스텀 훅 패턴</strong> 3가지를 공유합니다.</p>
@@ -45,7 +40,7 @@ const [password, onChangePassword] = useInput(&#39;&#39;);
 &lt;input value={email} onChange={onChangeEmail} /&gt;
 </code></pre>
 <hr>
-<h3 id="3-실무-필수-hook-②--모달토글-제어-usetoggle">3. 실무 필수 Hook ② : 모달/토글 제어 (useToggle)</h3>
+<h3 id="3-실무-필수-hook-②--모달토글-제어-usetoggle">3. 실무 필수 Hook ③ : 모달/토글 제어 (useToggle)</h3>
 <p>모달 창을 열고 닫거나, 드롭다운 메뉴를 펼칠 때 <code>true/false</code> 를 왔다 갔다 하는 로직은 무조건 쓰입니다.</p>
 <h4 id="🛠️-구현-코드-1">🛠️ 구현 코드</h4>
 <pre><code class="language-typescript">import { useState, useCallback } from &#39;react&#39;;

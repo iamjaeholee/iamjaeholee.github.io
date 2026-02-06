@@ -1,10 +1,5 @@
----layout: post
-title: "[DevOps] Monorepo vs Multirepo: 요즘 대세는 왜 모노레포일까?"
-date: 2026-01-17 10:14:58 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/DevOps-Monorepo-vs-Multirepo-%EC%9A%94%EC%A6%98-%EB%8C%80%EC%84%B8%EB%8A%94-%EC%99%9C-%EB%AA%A8%EB%85%B8%EB%A0%88%ED%8F%AC%EC%9D%BC%EA%B9%8C
----
-<p>프로젝트 규모가 커지다 보면 이런 고민에 빠지게 됩니다.
+---layout: posttitle: "[DevOps] Monorepo vs Multirepo: 요즘 대세는 왜 모노레포일까?"date: 2026-01-17 10:14:58 +0000
+categories: [Velog]---<p>프로젝트 규모가 커지다 보면 이런 고민에 빠지게 됩니다.
 &quot;관리자(Admin) 페이지랑 사용자(App) 페이지가 따로 있는데, 버튼 디자인이나 로그인 로직은 똑같네? 이걸 어떻게 공유하지?&quot;</p>
 <p>그냥 <strong>복사 + 붙여넣기</strong> (Ctrl+C, V) 를 하자니 수정할 때마다 두 군데 다 고쳐야 하고, <strong>npm 라이브러리</strong> 로 만들자니 배포 과정이 너무 번거롭죠.</p>
 <p>이런 고민을 해결하기 위해 등장한 개념이 바로 <strong>저장소 관리 전략</strong> (Repository Strategy) 입니다.

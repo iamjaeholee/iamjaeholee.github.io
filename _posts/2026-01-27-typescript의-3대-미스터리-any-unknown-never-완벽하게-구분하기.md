@@ -1,10 +1,5 @@
----layout: post
-title: "TypeScript의 3대 미스터리: any, unknown, never 완벽하게 구분하기"
-date: 2026-01-27 09:50:13 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/TypeScript%EC%9D%98-3%EB%8C%80-%EB%AF%B8%EC%8A%A4%ED%84%B0%EB%A6%AC-any-unknown-never-%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0
----
-<p>타입스크립트(TypeScript)를 공부하다 보면 가장 흔하게 마주치지만, 막상 설명하려면 말문이 막히는 세 가지 키워드가 있습니다. 바로 <code>any</code>, <code>unknown</code>, 그리고 <code>never</code>입니다.</p>
+---layout: posttitle: "TypeScript의 3대 미스터리: any, unknown, never 완벽하게 구분하기"date: 2026-01-27 09:50:13 +0000
+categories: [Velog]---<p>타입스크립트(TypeScript)를 공부하다 보면 가장 흔하게 마주치지만, 막상 설명하려면 말문이 막히는 세 가지 키워드가 있습니다. 바로 <code>any</code>, <code>unknown</code>, 그리고 <code>never</code>입니다.</p>
 <p>&quot;그냥 다 <code>any</code> 쓰면 안 되나? 편하던데.&quot;
 &quot;값이 없다는 건 <code>void</code> 아닌가? <code>never</code>는 또 뭐야?&quot;</p>
 <p>오늘은 이 세 가지 타입의 미묘한 차이를, 우리가 일상에서 겪는 상황에 빗대어 명쾌하게 정리해 드립니다.</p>

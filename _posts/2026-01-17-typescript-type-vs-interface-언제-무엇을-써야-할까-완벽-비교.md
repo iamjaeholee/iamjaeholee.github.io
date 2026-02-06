@@ -1,10 +1,5 @@
----layout: post
-title: "[TypeScript] type vs interface, 언제 무엇을 써야 할까? (완벽 비교)"
-date: 2026-01-17 10:00:49 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/TypeScript-type-vs-interface-%EC%96%B8%EC%A0%9C-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90
----
-<p>TypeScript를 처음 공부할 때 가장 헷갈리는 것이 하나 있습니다.
+---layout: posttitle: "[TypeScript] type vs interface, 언제 무엇을 써야 할까? (완벽 비교)"date: 2026-01-17 10:00:49 +0000
+categories: [Velog]---<p>TypeScript를 처음 공부할 때 가장 헷갈리는 것이 하나 있습니다.
 바로 객체의 타입을 정의할 때 쓰는 <strong>type</strong> (Type Alias) 과 <strong>interface</strong> 입니다.</p>
 <pre><code class="language-typescript">// 이렇게 써도 되고...
 interface User {

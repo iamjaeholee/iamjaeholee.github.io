@@ -1,10 +1,5 @@
----layout: post
-title: "[Security Basics] Why My Internet Got Faster in Uzbekistan: The Magic of VPNs Explained"
-date: 2026-01-28 19:30:45 +0000
-categories: [Velog]
-original_url: https://velog.io/@iamjaeholee/Security-Basics-Why-My-Internet-Got-Faster-in-Uzbekistan-The-Magic-of-VPNs-Explained-58kmeeer
----
-<p>Hello! Today, I want to break down a technology that many have heard of but few truly understand: <strong>VPN (Virtual Private Network)</strong>.</p>
+---layout: posttitle: "[Security Basics] Why My Internet Got Faster in Uzbekistan: The Magic of VPNs Explained"date: 2026-01-28 19:30:45 +0000
+categories: [Velog]---<p>Hello! Today, I want to break down a technology that many have heard of but few truly understand: <strong>VPN (Virtual Private Network)</strong>.</p>
 <p>I&#39;ll explain this based on a true story from when I was staying in Uzbekistan. The internet there was incredibly slow—sometimes it was hard even to send a simple message on KakaoTalk. But then, I discovered a VPN, and it completely changed my digital life there.</p>
 <p>Here is a complete guide to the &quot;magic&quot; of VPNs, from practical uses to technical details.</p>
 <hr>
