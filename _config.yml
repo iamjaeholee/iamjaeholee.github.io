@@ -1,9 +1,9 @@
 # 사이트 기본 설정
-title: 복세편살 기술 블로그
+title: 쉽게 읽는 기술 블로그
 description: >-
-  복잡한 세상 편하게 살고 싶은 개발자의 기술 기록. 
-  Java, Python, Rust, 그리고 IT 프리랜서의 인사이트를 공유합니다.
-author: 복세편살 (Boksepyeonsal)
+  클라우드 인프라, 보안, 그리고 다양한 개발 도메인의 기술을 쉽게 풀어서 기록합니다.
+  Kubernetes, 네트워크 보안, DevOps/SRE 운영 노하우를 초보자도 이해할 수 있게 설명합니다.
+author: 이재호
 email: boksepyunsal24@gamil.com
 
 # 테마 설정

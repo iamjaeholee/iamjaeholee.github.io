@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# 복세편살 기술 블로그
+# 쉽게 읽는 기술 블로그
 
 ## 포스트 목록
 <ul>
